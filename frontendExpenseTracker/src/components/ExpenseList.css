@@ -1,0 +1,74 @@
+/* ExpenseList.css */
+
+.expense-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+}
+
+.grid-container, .table-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: min-content auto auto auto max-content auto;;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+
+.table-row {
+    background-color: #f9f9f9;
+}
+
+.grid-container div, .table-row div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container div {
+    border-right: 1px solid #007bff;
+}
+
+.grid-container div:last-child, .table-row div:last-child {
+    border-right: none;
+}
+
+.update-button, .delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 2px;
+}
+
+.update-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #b21f2d;
+}

@@ -1,0 +1,113 @@
+.dashboard-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 350px;
+  background: #130d30;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li button {
+  width: 100%;
+  padding: 10px;
+  background: #34495e;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logout {
+  width: 100%;
+  padding: 10px;
+  background: #dc3545;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: #9b0505;
+}
+
+.sidebar nav ul li button:hover {
+  background: #1abc9c;
+}
+
+.main-content {
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  background: #26badf;
+  color: black;
+}
+
+.expense-list {
+  width: 100%; /* Ensure the expense list takes full width */
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+/* Make the budget list scrollable */
+.budget-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  /* margin-top: 20px; */
+}
+
+/* ExpenseList Component Styles */
+.expense-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.expense-list-table thead {
+  background: #3498db;
+  color: white;
+}
+
+.expense-list-table th,
+.expense-list-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.expense-list-table tbody tr {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.expense-list-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.expense-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

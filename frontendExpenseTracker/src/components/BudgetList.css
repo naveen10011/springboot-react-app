@@ -1,0 +1,72 @@
+
+
+
+.grid-container, .table-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 5px 0;
+    color: black;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: min-content auto auto auto max-content auto;;
+    background-color: #1b0928;
+    color: white;
+    font-weight: bold;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.budget-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .budget-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+
+
+.table-row {
+    background-color: #f9f9f9;
+}
+
+.grid-container div, .table-row div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container div {
+    border-right: 1px solid rgba(45, 11, 100, 0.251)
+}
+
+.grid-container div:last-child, .table-row div:last-child {
+    border-right: none;
+}
+
+.delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 2px;
+}
+
+
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #b21f2d;
+}

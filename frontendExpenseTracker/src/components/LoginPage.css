@@ -1,0 +1,76 @@
+/* ExpenseList.css */
+
+
+
+.login-page {
+  max-width: 700px;
+  width: 100%;
+  margin: auto; /* Center the login page horizontally */
+  padding: 3rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.login-page h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.login-page input {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(252, 249, 249);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: rgb(254, 253, 253);
+}
+
+.login-page .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.login-page button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+  border: 1px solid white;
+}
+
+.login-page button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.login-page .switch-button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.login-page .switch-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
